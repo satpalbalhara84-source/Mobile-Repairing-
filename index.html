@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Mobile Repairing At Home</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#061426;
+color:white;
+line-height:1.6;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:92%;
+max-width:1100px;
+margin:auto;
+}
+
+/* TOP */
+
+.top{
+background:#020914;
+padding:8px;
+font-size:13px;
+}
+
+.top .container{
+display:flex;
+justify-content:space-between;
+}
+
+/* HEADER */
+
+header{
+background:white;
+position:sticky;
+top:0;
+z-index:99;
+box-shadow:0 5px 20px #0005;
+}
+
+.head{
+min-height:82px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logoarea{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.phoneicon{
+width:58px;
+height:58px;
+border-radius:13px;
+background:linear-gradient(135deg,#07152b,#087dcc);
+border:4px solid #e51d32;
+display:grid;
+place-items:center;
+font-size:32px;
+}
+
+.logo{
+font-size:21px;
+font-weight:900;
+color:#07152b;
+}
+
+.logo span{
+color:#e21d2d;
+}
+
+.call{
+background:#e51d2d;
+color:white;
+padding:13px 18px;
+border-radius:10px;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+padding:55px 0;
+background:
+radial-gradient(circle at 85% 15%,#087ac9,#103b61 35%,#061426 70%);
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+.badge{
+display:inline-block;
+background:#eafff2;
+color:#087b3d;
+padding:8px 14px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.hero h1{
+font-size:clamp(40px,6vw,64px);
+line-height:1.05;
+margin-bottom:18px;
+}
+
+.hero h1 span{
+color:#ff3047;
+}
+
+.hero p{
+color:#d0dbe7;
+font-size:18px;
+margin-bottom:22px;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.btn{
+display:inline-block;
+padding:13px 18px;
+border-radius:9px;
+font-weight:bold;
+}
+
+.red{
+background:#e51d32;
+color:white;
+}
+
+.green{
+background:#13a653;
+color:white;
+}
+
+.white{
+background:white;
+color:#07152b;
+}
+
+/* REPAIR IMAGE */
+
+.repair{
+background:linear-gradient(145deg,#fff,#dcecff);
+border-radius:22px;
+padding:20px;
+box-shadow:0 15px 40px #0007;
+text-align:center;
+}
+
+.repair .bigphone{
+font-size:120px;
+}
+
+.repair h2{
+color:#07152b;
+font-size:34px;
+}
+
+.repair h2 span{
+color:#e21d32;
+}
+
+/* TRUST */
+
+.trust{
+background:#020914;
+padding:20px 0;
+}
+
+.trustgrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+text-align:center;
+}
+
+.trustgrid div{
+font-weight:bold;
+}
+
+.trustgrid b{
+display:block;
+font-size:26px;
+}
+
+/* SECTION */
+
+section{
+padding:65px 0;
+background:
+radial-gradient(circle at top left,#123c65,#061426 65%);
+}
+
+.title{
+text-align:center;
+margin-bottom:35px;
+}
+
+.title h2{
+font-size:35px;
+}
+
+.title p{
+color:#c3d0de;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px;
+}
+
+.service{
+padding:24px;
+border-radius:18px;
+min-height:175px;
+box-shadow:0 10px 30px #0005;
+}
+
+.service:nth-child(1){background:linear-gradient(135deg,#6329ed,#a41cff)}
+.service:nth-child(2){background:linear-gradient(135deg,#008c78,#08c987)}
+.service:nth-child(3){background:linear-gradient(135deg,#0677e6,#08a9ee)}
+.service:nth-child(4){background:linear-gradient(135deg,#df116c,#f42b98)}
+.service:nth-child(5){background:linear-gradient(135deg,#ed6900,#ffab00)}
+.service:nth-child(6){background:linear-gradient(135deg,#0878c9,#00bce8)}
+.service:nth-child(7){background:linear-gradient(135deg,#5230dd,#923cf5)}
+.service:nth-child(8){background:linear-gradient(135deg,#008f70,#10c981)}
+.service:nth-child(9){background:linear-gradient(135deg,#df1d31,#ff641e)}
+
+.service .ico{
+font-size:35px;
+margin-bottom:8px;
+}
+
+.service h3{
+margin-bottom:5px;
+}
+
+.service p{
+color:#f2f7fb;
+}
+
+/* PRICES */
+
+.prices{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:17px;
+}
+
+.price{
+padding:27px 15px;
+text-align:center;
+border-radius:18px;
+box-shadow:0 10px 30px #0006;
+}
+
+.price:nth-child(1){background:linear-gradient(135deg,#d91443,#9d0a70)}
+.price:nth-child(2){background:linear-gradient(135deg,#0679df,#034fae)}
+.price:nth-child(3){background:linear-gradient(135deg,#009f72,#00c486)}
+.price:nth-child(4){background:linear-gradient(135deg,#ed8b00,#e84c00)}
+
+.amount{
+font-size:32px;
+font-weight:900;
+margin:10px;
+}
+
+.price p{
+margin-bottom:15px;
+}
+
+.price .btn{
+background:white;
+color:#07152b;
+}
+
+/* BRANDS */
+
+.brands{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.brand{
+background:white;
+color:#07152b;
+padding:13px 18px;
+border-radius:10px;
+font-weight:bold;
+}
+
+/* WHY */
+
+.why{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+.whybox{
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 30px #0005;
+}
+
+.whybox:nth-child(1){background:linear-gradient(135deg,#6128ed,#a31cff)}
+.whybox:nth-child(2){background:linear-gradient(135deg,#057edb,#05b2ef)}
+.whybox:nth-child(3){background:linear-gradient(135deg,#009d72,#05c986)}
+.whybox:nth-child(4){background:linear-gradient(135deg,#df1c43,#f26719)}
+
+.whybox p{
+color:#f1f7ff;
+margin-top:6px;
+}
+
+/* STEPS */
+
+.steps{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:17px;
+}
+
+.step{
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 30px #0005;
+}
+
+.step:nth-child(1){background:linear-gradient(135deg,#6128ed,#a31cff)}
+.step:nth-child(2){background:linear-gradient(135deg,#0677e2,#00a9ed)}
+.step:nth-child(3){background:linear-gradient(135deg,#009c73,#05c982)}
+.step:nth-child(4){background:linear-gradient(135deg,#df1c38,#f36b17)}
+
+.num{
+font-size:32px;
+font-weight:900;
+}
+
+/* REVIEWS */
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:17px;
+}
+
+.review{
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 30px #0005;
+}
+
+.review:nth-child(1){background:linear-gradient(135deg,#6027e8,#a21cff)}
+.review:nth-child(2){background:linear-gradient(135deg,#057bdc,#00a9ed)}
+.review:nth-child(3){background:linear-gradient(135deg,#df1767,#f34b26)}
+
+.stars{
+color:#ffd21c;
+font-size:21px;
+}
+
+/* BOOKING */
+
+.booking{
+background:
+radial-gradient(circle at bottom left,#155184,#061426 65%);
+}
+
+.bookinggrid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:start;
+}
+
+.booking h2{
+font-size:38px;
+}
+
+.booking p{
+color:#c9d5e1;
+margin:9px 0;
+}
+
+.form{
+background:white;
+color:#07152b;
+padding:25px;
+border-radius:20px;
+}
+
+.form label{
+font-weight:bold;
+}
+
+input,select,textarea{
+width:100%;
+padding:13px;
+margin:5px 0 13px;
+border:1px solid #ccd5df;
+border-radius:8px;
+font-size:15px;
+}
+
+textarea{
+height:100px;
+}
+
+.form button{
+width:100%;
+border:0;
+cursor:pointer;
+}
+
+/* FAQ */
+
+.faq{
+max-width:850px;
+margin:auto;
+}
+
+details{
+background:#103554;
+border:1px solid #285a7e;
+padding:17px;
+border-radius:11px;
+margin:10px 0;
+}
+
+summary{
+font-weight:bold;
+cursor:pointer;
+}
+
+details p{
+color:#c6d4e0;
+margin-top:8px;
+}
+
+/* FOOTER */
+
+footer{
+background:#020914;
+padding:40px 0;
+}
+
+.footer{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:25px;
+}
+
+footer h3{
+margin-bottom:10px;
+}
+
+footer a{
+display:block;
+color:#c9d2dc;
+margin:6px 0;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+right:15px;
+bottom:15px;
+background:#13a653;
+color:white;
+padding:14px 19px;
+border-radius:50px;
+font-weight:bold;
+z-index:1000;
+box-shadow:0 7px 25px #0007;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+.hero-grid,
+.bookinggrid,
+.why{
+grid-template-columns:1fr;
+}
+
+.services{
+grid-template-columns:1fr 1fr;
+}
+
+.prices{
+grid-template-columns:1fr 1fr;
+}
+
+.steps{
+grid-template-columns:1fr 1fr;
+}
+
+.reviews{
+grid-template-columns:1fr;
+}
+
+.trustgrid{
+grid-template-columns:1fr 1fr;
+}
+
+.footer{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:500px){
+
+.services,
+.prices,
+.steps,
+.footer{
+grid-template-columns:1fr;
+}
+
+.head{
+min-height:72px;
+}
+
+.phoneicon{
+width:52px;
+height:52px;
+font-size:28px;
+}
+
+.logo{
+font-size:16px;
+}
+
+.call{
+padding:10px 12px;
+font-size:13px;
+}
+
+.hero{
+padding:38px 0;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.repair .bigphone{
+font-size:90px;
+}
+
+.repair h2{
+font-size:27px;
+}
+
+section{
+padding:50px 0;
+}
+
+.title h2{
+font-size:30px;
+}
+
+.booking h2{
+font-size:31px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP -->
+<div class="top">
+<div class="container">
+<span>🏠 Doorstep Mobile Repair</span>
+<span>📞 7007 882 051</span>
+</div>
+</div>
+
+<!-- HEADER -->
+<header>
+<div class="container head">
+
+<div class="logoarea">
+
+<div class="phoneicon">📱</div>
+
+<div class="logo">
+MOBILE <span>REPAIRING</span>
+</div>
+
+</div>
+
+<a href="tel:+917007882051" class="call">
+📞 Call Now
+</a>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="badge">
+🏠 SMART REPAIR AT YOUR DOORSTEP
+</div>
+
+<h1>
+Mobile Repairing
+<span>At Your Home</span>
+</h1>
+
+<p>
+अब mobile repair shop जाने की जरूरत नहीं।
+Expert technician को अपने घर या office पर बुलाएं।
+</p>
+
+<div class="buttons">
+
+<a href="#booking" class="btn red">
+📅 Book Repair
+</a>
+
+<a href="https://wa.me/917007882051?text=Hello%2C%20mujhe%20mobile%20repair%20karwani%20hai." class="btn green">
+💬 WhatsApp
+</a>
+
+<a href="tel:+917007882051" class="btn white">
+📞 Call Now
+</a>
+
+</div>
+
+</div>
+
+<div class="repair">
+
+<div class="bigphone">📱🔧</div>
+
+<h2>
+SMART <span>REPAIR</span>
+</h2>
+
+<h2>
+AT YOUR HOME
+</h2>
+
+<p style="color:#526275;margin-top:10px;">
+Fast • Trusted • Doorstep Service
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+<div class="container trustgrid">
+
+<div>
+<b>🏠</b>
+Doorstep
+</div>
+
+<div>
+<b>⚡</b>
+Fast Service
+</div>
+
+<div>
+<b>🔧</b>
+Expert Repair
+</div>
+
+<div>
+<b>🛡️</b>
+Trusted
+</div>
+
+</div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+
+<div class="container">
+
+<div class="title">
+<h2>Our Repair Services</h2>
+<p>Mobile की common problems का repair</p>
+</div>
+
+<div class="services">
+
+<div class="service">
+<div class="ico">📱</div>
+<h3>Display Replacement</h3>
+<p>Broken screen और touch repair.</p>
+</div>
+
+<div class="service">
+<div class="ico">🔋</div>
+<h3>Battery Replacement</h3>
+<p>Battery जल्दी खत्म होने की समस्या.</p>
+</div>
+
+<div class="service">
+<div class="ico">🔌</div>
+<h3>Charging Repair</h3>
+<p>Charging port और charging problem.</p>
+</div>
+
+<div class="service">
+<div class="ico">📷</div>
+<h3>Camera Repair</h3>
+<p>Front और back camera repair.</p>
+</div>
+
+<div class="service">
+<div class="ico">🔊</div>
+<h3>Speaker & Mic</h3>
+<p>Sound और microphone problems.</p>
+</div>
+
+<div class="service">
+<div class="ico">💧</div>
+<h3>Water Damage</h3>
+<p>Liquid damage inspection.</p>
+</div>
+
+<div class="service">
+<div class="ico">💻</div>
+<h3>Software Repair</h3>
+<p>Hang और software problems.</p>
+</div>
+
+<div class="service">
+<div class="ico">⚙️</div>
+<h3>Hardware Repair</h3>
+<p>Hardware diagnosis और repair.</p>
+</div>
+
+<div class="service">
+<div class="ico">🔘</div>
+<h3>Power Button</h3>
+<p>Power और volume button repair.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PRICES -->
+<section>
+
+<div class="container">
+
+<div class="title">
+<h2>Popular Repair Services</h2>
+<p>Final price model और parts के अनुसार confirm होगा</p>
+</div>
+
+<div class="prices">
+
+<div class="price">
+<h3>Screen Repair</h3>
+<div class="amount">₹499+</div>
+<p>Selected Models</p>
+<a href="#booking" class="btn">Get Quote</a>
+</div>
+
+<div class="price">
+<h3>Battery</h3>
+<div class="amount">₹399+</div>
+<p>Model Dependent</p>
+<a href="#booking" class="btn">Get Quote</a>
+</div>
+
+<div class="price">
+<h3>Charging</h3>
+<div class="amount">₹299+</div>
+<p>Diagnosis Required</p>
+<a href="#booking" class="btn">Get Quote</a>
+</div>
+
+<div class="price">
+<h3>Software</h3>
+<div class="amount">₹199+</div>
+<p>Problem Dependent</p>
+<a href="#booking" class="btn">Get Quote</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- BRANDS -->
+<section>
+
+<div class="container">
+
+<div class="title">
+<h2>Mobile Brands We Repair</h2>
+<p>Major mobile brands</p>
+</div>
+
+<div class="brands">
+
+<div class="brand">Apple iPhone</div>
+<div class="brand">Samsung</div>
+<div class="brand">OnePlus</div>
+<div class="brand">Xiaomi</div>
+<div class="brand">Vivo</div>
+<div class="brand">OPPO</div>
+<div class="brand">Realme</div>
+<div class="brand">Motorola</div>
+<div class="brand">Nothing</div>
+<div class="brand">Google Pixel</div>
+
+</div>
+</div>
+</section>
+
+<!-- WHY -->
+<section>
+
+<div class="container">
+
+<div class="title">
+<h2>Why Choose Us?</h2>
+</div>
+
+<div class="why">
+
+<div class="whybox">
+<h3>🏠 Doorstep Service</h3>
+<p>घर या office पर mobile repair service.</p>
+</div>
+
+<div class="whybox">
+<h3>⚡ Quick Response</h3>
+<p>Call और WhatsApp से आसानी से enquiry करें.</p>
+</div>
+
+<div class="whybox">
+<h3>🔧 Expert Technician</h3>
+<p>Common mobile problems के लिए technician support.</p>
+</div>
+
+<div class="whybox">
+<h3>💰 Clear Pricing</h3>
+<p>Repair से पहले applicable charges confirm करें.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- STEPS -->
+<section>
+
+<div class="container">
+
+<div class="title">
+<h2>How It Works</h2>
+<p>सिर्फ 4 आसान steps</p>
+</div>
+
+<div class="steps">
+
+<div class="step">
+<div class="num">01</div>
+<h3>Call / WhatsApp</h3>
+<p>अपनी problem बताएं.</p>
+</div>
+
+<div class="step">
+<div class="num">02</div>
+<h3>Mobile Details</h3>
+<p>Brand और model बताएं.</p>
+</div>
+
+<div class="step">
+<div class="num">03</div>
+<h3>Technician</h3>
+<p>Available technician आएगा.</p>
+</div>
+
+<div class="step">
+<div class="num">04</div>
+<h3>Repair</h3>
+<p>Charges confirm करके repair करवाएं.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section>
+
+<div class="container">
+
+<div class="title">
+<h2>Customer Reviews</h2>
+</div>
+
+<div class="reviews">
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"घर पर display repair करवाने की सुविधा बहुत अच्छी लगी।"</p>
+<b>— Rahul</b>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"WhatsApp पर जल्दी response मिला।"</p>
+<b>— Amit</b>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"Doorstep service बहुत convenient है।"</p>
+<b>— Sumit</b>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+
+<div class="container bookinggrid">
+
+<div>
+
+<h2>
+Book Mobile Repair At Home
+</h2>
+
+<br>
+
+<p>📞 <b>7007 882 051</b></p>
+<p>💬 WhatsApp Booking Available</p>
+<p>🏠 Home / Office Service</p>
+<p>⚡ Fast Response</p>
+
+<br>
+
+<a href="https://wa.me/917007882051?text=Hello%2C%20mujhe%20mobile%20repair%20book%20karwani%20hai." class="btn green">
+💬 Direct WhatsApp Booking
+</a>
+
+</div>
+
+<form class="form" onsubmit="sendWA(event)">
+
+<label>Name</label>
+<input id="name" required placeholder="आपका नाम">
+
+<label>Mobile Number</label>
+<input id="phone" required type="tel" placeholder="मोबाइल नंबर">
+
+<label>Brand</label>
+
+<select id="brand" required>
+
+<option value="">Select Brand</option>
+<option>Apple iPhone</option>
+<option>Samsung</option>
+<option>OnePlus</option>
+<option>Xiaomi</option>
+<option>Vivo</option>
+<option>OPPO</option>
+<option>Realme</option>
+<option>Motorola</option>
+<option>Other</option>
+
+</select>
+
+<label>Mobile Model</label>
+<input id="model" required placeholder="जैसे iPhone 13">
+
+<label>Repair Problem</label>
+<textarea id="problem" required placeholder="Display / Battery / Charging"></textarea>
+
+<label>Location</label>
+<input id="location" required placeholder="Area / City">
+
+<button class="btn green" type="submit">
+💬 Send Booking on WhatsApp
+</button>
+
+</form>
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section>
+
+<div class="container">
+
+<div class="title">
+<h2>Frequently Asked Questions</h2>
+</div>
+
+<div class="faq">
+
+<details>
+<summary>क्या technician घर पर आता है?</summary>
+<p>हाँ, available service area में doorstep service दी जाती है.</p>
+</details>
+
+<details>
+<summary>Repair की price कितनी होगी?</summary>
+<p>Price mobile model, problem और parts के अनुसार अलग हो सकती है.</p>
+</details>
+
+<details>
+<summary>क्या WhatsApp से booking कर सकते हैं?</summary>
+<p>हाँ, WhatsApp से सीधे booking कर सकते हैं.</p>
+</details>
+
+<details>
+<summary>कौन-कौन से mobile repair होते हैं?</summary>
+<p>Display, battery, charging, camera, speaker, mic, software और hardware आदि.</p>
+</details>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<div class="container footer">
+
+<div>
+<h3>Mobile Repairing At Home</h3>
+<p>Fast & trusted doorstep mobile repair service.</p>
+<p>📞 7007 882 051</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<a href="#services">Services</a>
+<a href="#booking">Book Repair</a>
+<a href="#booking">Contact</a>
+</div>
+
+<div>
+<h3>Contact</h3>
+<a href="tel:+917007882051">📞 Call Now</a>
+<a href="https://wa.me/917007882051">💬 WhatsApp</a>
+</div>
+
+</div>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="whatsapp"
+href="https://wa.me/917007882051?text=Hello%2C%20mujhe%20mobile%20repair%20karwani%20hai.">
+💬 WhatsApp
+</a>
+
+<script>
+
+function sendWA(e){
+
+e.preventDefault();
+
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let brand=document.getElementById("brand").value;
+let model=document.getElementById("model").value;
+let problem=document.getElementById("problem").value;
+let location=document.getElementById("location").value;
+
+let msg=
+"📱 MOBILE REPAIR BOOKING\n\n"+
+"👤 Name: "+name+"\n"+
+"📞 Mobile: "+phone+"\n"+
+"📱 Brand: "+brand+"\n"+
+"🔧 Model: "+model+"\n"+
+"🛠️ Problem: "+problem+"\n"+
+"📍 Location: "+location;
+
+window.open(
+"https://wa.me/917007882051?text="+encodeURIComponent(msg),
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
